@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 960px 水平置中，用 float 排三欄 */
+    .container {
+        margin: auto;
+        width: 960px;
+        background: orange;
+        overflow: hidden;
+    }
+
+    .col {
+        
+        float: left;
+        width: 270px;
+        padding: 10px;
+        margin: 10px;
+        border: 5px solid rgb(255,0,255);
+    }
+
+    img {
+        /* max-width 圖片寬度一定要大於父元素的寬度，才會填滿父元素 */
+        max-width: 100%;
+        /* width 一定會將圖片填滿父元素 */
+        width: 100%;
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col">
+            <img src="https://picsum.photos/800/600/?random=10">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio corporis delectus nemo architecto. Magni, voluptatibus voluptatem? Consectetur architecto accusantium accusamus voluptatem, in amet sequi ex quia inventore perferendis perspiciatis.</p>
+        </div>
+        <div class="col">
+            <img src="https://picsum.photos/800/600/?random=10">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio corporis delectus nemo architecto. Magni, voluptatibus voluptatem? Consectetur architecto accusantium accusamus voluptatem, in amet sequi ex quia inventore perferendis perspiciatis.</p>
+        </div>
+        <div class="col">
+            <img src="https://picsum.photos/800/600/?random=10">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius odio corporis delectus nemo architecto. Magni, voluptatibus voluptatem? Consectetur architecto accusantium accusamus voluptatem, in amet sequi ex quia inventore perferendis perspiciatis.</p>
+        </div>
+    </div>
+</body>
+</html>
